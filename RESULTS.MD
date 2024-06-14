@@ -1,4 +1,4 @@
- [NOT FROZEN](Non_Frozen.pdf)
+ [FROZEN](Frozen_.pdf)
 on huguing face : https://huggingface.co/tarsssss/hubert-sslepoch_v1
 
 trues shape: (1400,)
@@ -8,7 +8,7 @@ F1-Score = 0.06322939571228246
 
 
 
- [FROZEN](Frozen.pdf)
+ [FROZEN NOT](Frozen_not.pdf)
 on huguing face : https://huggingface.co/tarsssss/hubert-sslepoch_v2
 
 trues shape: (1400,)
