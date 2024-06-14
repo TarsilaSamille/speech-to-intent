@@ -1,0 +1,23 @@
+andares = 2023
+tn = []
+for n in range(2, andares):
+    tn.append((n -1 , int(n*(n-1)/2)))
+n = 9
+
+def gesa(n):
+    return n * (n + 1) * (2 * n + 1) // 6
+
+row = int((-1 + ((1 + (8 * n)) ** 0.5)) / 2)
+
+
+t = 1
+n2 = n
+sum_all = 0
+for r in range(row  ,-1,  -1):
+    print(n2)
+    sum_all = sum_all + gesa(n2) - gesa(n2-1)
+    n2 = n2 - (tn[r][1] - tn[r-1][1]) +1
+    print(n2, tn[r][1] - tn[r-1][1 ], sum_all)
+
+#156
+142+9+4=146 

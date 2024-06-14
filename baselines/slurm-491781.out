@@ -1,0 +1,35 @@
+/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/pytorch_lightning/utilities/seed.py:48: LightningDeprecationWarning: `pytorch_lightning.utilities.seed.seed_everything` has been deprecated in v1.8.0 and will be removed in v2.0.0. Please use `lightning_fabric.utilities.seed.seed_everything` instead.
+  "`pytorch_lightning.utilities.seed.seed_everything` has been deprecated in v1.8.0 and will be"
+[rank: 0] Global seed set to 100
+  0%|          | 0/1400 [00:00<?, ?it/s]  0%|          | 0/1400 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "test.py", line 39, in <module>
+    y_hat_l = model(x_tensor)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/repos/speech-to-intent/baselines/trainer_hubert.py", line 27, in forward
+    return self.model(x)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/repos/speech-to-intent/baselines/model.py", line 72, in forward
+    x = self.encoder(x).last_hidden_state
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/transformers/models/hubert/modeling_hubert.py", line 1101, in forward
+    extract_features = self.feature_extractor(input_values)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/transformers/models/hubert/modeling_hubert.py", line 361, in forward
+    hidden_states = conv_layer(hidden_states)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/transformers/models/hubert/modeling_hubert.py", line 227, in forward
+    hidden_states = self.conv(hidden_states)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 313, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/tssdsilveira/.conda/envs/s2i2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 310, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Expected 2D (unbatched) or 3D (batched) input to conv1d, but got input of size: [1, 1, 3000, 80]
+srun: error: gpunode0: task 0: Exited with exit code 1
