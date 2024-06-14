@@ -9,7 +9,7 @@ repo_name = "tarsssss/hubert-sslepoch_v1"
 
 
 # Replace with your Hugging Face token
-token = "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"
+token = " "
 
 # Authenticate with the Hugging Face Hub
 huggingface_hub.login(token)
