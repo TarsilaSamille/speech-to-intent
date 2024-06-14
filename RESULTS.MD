@@ -1,4 +1,4 @@
- [NOT FROZEN](Not_Frozen.pdf)
+ [NOT FROZEN](Non_Frozen.pdf)
 on huguing face : https://huggingface.co/tarsssss/hubert-sslepoch_v1
 
 trues shape: (1400,)
